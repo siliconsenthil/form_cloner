@@ -1,6 +1,22 @@
 
-<button type="button" id='add_new'>Add New</button>
+<button type="button" class="add_clone" id='add_details'>Add New</button>
+<div data-clone-append-section="add_details"></div>
 
-<div class="to_show">
-  some content
+<div data-clone-template="add_details" class='append' style="display: none;">
+  <div class="to_clone">
+    <label>Detail</label>
+    <input type='text'/>
+  </div>
+</div>
+
+<button type="button" class="add_clone" id='add_address'>Add New</button>
+<div data-clone-append-section="add_address"></div>
+
+<div data-clone-template="add_address" style="display: none;">
+  <div class="to_clone">
+    <input type='text'/>
+    <input type='text'/>
+    <input type='text'/>
+    <input type='text'/>
+  </div>
 </div>
